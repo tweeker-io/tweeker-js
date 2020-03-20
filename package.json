@@ -1,19 +1,23 @@
 {
   "name": "tweeker-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "A js library to embed the Tweeker embed script",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tweeker-io/tweeker-js.git"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Tweeker (https://tweeker.io)",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
-    "babel-loader": "^8.0.6",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
   }
