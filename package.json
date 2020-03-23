@@ -1,6 +1,6 @@
 {
   "name": "tweeker-js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A js library to embed the Tweeker embed script",
   "main": "dist/index.js",
   "files": [
