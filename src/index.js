@@ -1,12 +1,13 @@
-
-export const embedTweeker = (businessId, scriptVersion = 'latest', options = {}) => {
-  setOptions(businessId, options)
-  injectScript(scriptVersion)
+export const embedTweeker = (args) => {
+  if (!args.businessId) {
+    throw new Error('Expected businessId as key in arguments')
+  }
+  setOptions(args.businessId)
+  injectScript(args.scriptVersion)
 }
 
-const setOptions = (businessId, options = {}) => {
+const setOptions = (businessId) => {
   return window.TweekerSettings = {
-    ...options,
     businessId: businessId
   }
 }
