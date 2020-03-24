@@ -1,6 +1,6 @@
 export const embedTweeker = (args) => {
   if (!args.businessId) {
-    throw new Error('Expected businessId as key in arguments')
+    throw new Error('Expected businessId as key in arguments penis')
   }
   setOptions(args.businessId)
   injectScript(args.scriptVersion)
