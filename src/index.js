@@ -3,7 +3,7 @@ export const embedTweeker = (args) => {
     throw new Error('Expected businessId as key in arguments penis')
   }
   setOptions(args.businessId)
-  injectScript(args.scriptVersion)
+  injectScript(args.embedVersion)
 }
 
 const setOptions = (businessId) => {
@@ -12,10 +12,10 @@ const setOptions = (businessId) => {
   }
 }
 
-const injectScript = (scriptVersion = 'latest') => {
+const injectScript = (embedVersion = 'latest') => {
   const script = document.createElement('script')
   script.async = true
-  script.src = `https://embed.tweeker.io/${scriptVersion}.js`
+  script.src = `https://embed.tweeker.io/${embedVersion}.js`
 
   const headOrBody = document.head || document.body
 
