@@ -4,7 +4,6 @@
   "description": "A js library to embed the Tweeker embed script",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
-  "browser": "dist/index.js",
   "files": [
     "dist"
   ],
